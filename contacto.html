@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+</head>
+<body>
+    <h1>CONTACTO</h1>
+  
+    
+    
+    <nav>
+        <ul>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="biografia.html">BIBLIOGRAFÍA</a></li>
+            <li><a href="home.html">INICIO</a></li>
+
+        </ul>
+    </nav>
+
+    <h2>Contacta con nosotros</h2>
+    <p>Disponemos de un frmulario para tener más detalles antes de ponernos en contacto con usted:</p>
+    <br>
+
+    <form method="GET">
+        
+    <fieldset>
+        <legend>Datos Personales</legend>
+         <br>
+        <label>Nombre:</label>
+        <input type="text" name="name">
+
+        <br>
+        <br>
+
+        <label>Apellido:</label>
+        <input type="text" name="apellido">
+        <br>
+        <br>
+        <label>Correo electrónico:</label>
+        <input type="email" name="email" placeholder="Escribe tu email" required="true">
+    </fieldset>
+
+        
+        <br>
+
+        <fieldset>
+            <legend>Tipo de servicio:</legend>
+            <br>
+            <input type="checkbox" name="tecnico" id="tecnico" value="tecnico">
+            <label for="tecnico">Servicio técnico</label>
+            <br>
+            <input type="checkbox" name="comercial" id="comercial" value="comercial">
+            <label for="tecnico">Departamento comercial</label>
+            <br>
+            <input type="checkbox" name="otro" id="otro" value="otro">
+            <label for="otro">Otros servicios</label>
+
+          </fieldset>
+
+          <br>
+          <br>
+          <br>
+        <label for="comentario">Más detalles de su consulta:</label>
+        <br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"> </textarea>
+
+        <br>
+
+
+
+
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
