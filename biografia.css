@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 20px; /*aqui no se agranda, en el hover SI!*/
+}
+
+.menu {
+  display: flex;
+  width: 50%; /*importante espacio entre palabras*/
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  background-color: yellow;
+  color: black;
+  transition: ease-in 0.2s;
+  border-radius: 10px; /*Aqui se redondean sus bordes verdes...*/
+}
+
+.logo span {
+  color: yellow;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.grande {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.grande img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.indice li {
+  list-style: none;
+  cursor: pointer;
+  margin: 50px;
+}
+
+.indice a:hover {
+  background-color: yellow;
+  color: black;
+  transition: ease-in 0.2s;
+  border-radius: 10px; /*Aqui se redondean sus bordes verdes...*/
+}
+.indice a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 5px 5px; /*aqui no se agranda, en el hover SI!*/
+  border: 50px;
+}
+
+.grande {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.granprimera img {
+  /*creo que conviene siempre usar max-w y max-h a 300px?*/
+  max-width: 300px;
+  max-height: 300px;
+  border: solid 2px;
+  border-color: whitesmoke;
+}
+
+.granprimera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  padding: 50px 50px 50px 50px;
+
+ 
+  
+}
