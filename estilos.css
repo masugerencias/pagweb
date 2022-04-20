@@ -1,28 +1,39 @@
 *{
   font-family: 'Tourney', cursive; 
+  padding: 0;
+    margin: 0;
 }
 body{
     padding: 0;
     margin: 0;
-    background-color: black;
+    width: fit-content;
+    background-image: img src="noche.jpg";
+    
      
 }
 
 
-h1{
+.hello{
    color: whitesmoke;
     text-align: center;
     font-size: 70px;
     background-color: black;
-}
+    float: none;
+    }
+
+
+
 
 nav ul {
     border: 1px solid #000000;
-    color: whitesmoke;
+    
     list-style-type: none;
-    padding:10px;
+   
     text-align: center;
-    width: 100%;
+   
+    background-color: black;
+    padding:50px;
+    margin:0px;
    }
 
 nav li {
@@ -33,10 +44,9 @@ nav li {
 
   nav a{
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     color: whitesmoke;
-   
-    
+      
 }
 
 nav a:hover{
@@ -46,8 +56,28 @@ nav a:hover{
 a:visited{
     color: whitesmoke;
 }
-footer{
-    color: aliceblue;
+
+aside {
+    width: 215px;
+    background-color: #141616;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    border: 1px solid #383838;
+    color: #FFFFFF !important;
 }
 
- 
+
+
+
+
+footer {
+    height: 50px;
+    bottom: 0;
+    background-color: #141616;
+    color: #FFFFFF !important;
+    width: 100%;
+    text-align: center;
+    margin:0px;
+}
