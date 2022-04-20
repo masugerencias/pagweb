@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.grande{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.menu a{
+    color: whitesmoke;
+
+}
+
+.logo span{
+    color: aqua;
+}
