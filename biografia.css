@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: brown;
+  color: whitesmoke;
+   
+}
+
+body{
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
 }
 
 .menu a {
@@ -38,35 +46,29 @@
   padding: 30px;
 }
 
-.grande {
+/*AQUI COMIENZAN LOS CONTENEDORES GRID!!!*/
+
+
+.grande span{
+    color:yellow
+  }
+
+  /*AQUI EMPIEZA EL PRIMER CONTENEDOR*/
+
+.granprimera{ /* EL GRID hay que ponerlo en el contenedor más grande (donde irán nuestras cajas)*/
+  margin: 0 auto;
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  color: whitesmoke;
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 50px;
+
 }
 
-.grande img {
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.indice li {
-  list-style: none;
-  cursor: pointer;
-  margin: 50px;
-}
-
-.indice a:hover {
-  background-color: yellow;
-  color: black;
-  transition: ease-in 0.2s;
-  border-radius: 10px; /*Aqui se redondean sus bordes verdes...*/
-}
-.indice a {
-  color: whitesmoke;
-  text-decoration: none;
-  padding: 5px 5px; /*aqui no se agranda, en el hover SI!*/
-  border: 50px;
+.peqprimera p{
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .grande {
@@ -78,19 +80,110 @@
 
 .granprimera img {
   /*creo que conviene siempre usar max-w y max-h a 300px?*/
-  max-width: 300px;
-  max-height: 300px;
-  border: solid 2px;
+  max-width: 550px;
+  max-height: 550px;
+  border: solid 10px;
   border-color: whitesmoke;
+  border-radius: 10px;
+  
+}
+
+.granprimera img:hover{
+  border:solid yellow 20px;
+    
 }
 
 .granprimera {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  align-items: center;
+  
   padding: 50px 50px 50px 50px;
 
- 
+}
+/*AQUI EMPIEZA LA SEGUNDA*/
+.gransegunda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  padding: 50px 50px 50px 50px;
+  gap: 50px;
+
+}
+
+.gransegunda img {
+  /*creo que conviene siempre usar max-w y max-h a 300px?*/
+  max-width: 300px;
+  max-height: 300px;
+  border: solid 10px;
+  border-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.peqsegunda p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.gransegunda img:hover{
+    border:solid yellow 20px;
+    
+  }
+
+/*AQUI EMPIEZA LA TERCERA PARTE creo que tengo que copiarlo y pegarlo todo y cambiar los nombres de las clases segun el html hecho*/
+
+.grande span{  /*esto podria ir en el body*/
+  color:yellow
+}
+
+.grantercera{ /* EL GRID hay que ponerlo en el contenedor más grande (donde irán nuestras cajas)*/
+margin: 0 auto;
+width: 100vw;
+height: 100vh;
+display: grid;
+  grid-template-columns: repeat(2,1fr);
+align-items: center;
+gap: 50px;
+
+}
+
+.peqtercera p{
+text-align: justify;
+text-justify: inter-word;
+}
+
+
+.grantercera img {
+/*creo que conviene siempre usar max-w y max-h a 300px?*/
+max-width: 550px;
+max-height: 550px;
+border: solid 10px;
+border-color: whitesmoke;
+border-radius: 10px;
+
+}
+
+.grantercera img:hover{
+
+border:solid yellow 20px;
   
+}
+
+
+.grantercera {
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 0 auto;
+align-items: center;
+padding: 50px 50px 50px 50px;
+
+}
+
+.grantercera img {
+/*creo que conviene siempre usar max-w y max-h a 300px?*/
+max-width: 300px;
+max-height: 300px;
+border: solid 10px;
+border-color: whitesmoke;
 }
