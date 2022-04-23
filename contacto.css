@@ -1,5 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+   
+}
 
 
-body{
-    background-image: url(sombrero.jpg);
+.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 20px; /*aqui no se agranda, en el hover SI!*/
+}
+
+.menu {
+  display: flex;
+  width: 50%; /*importante espacio entre palabras*/
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  background-color:rgb(235, 29, 29);
+  color: whitesmoke;
+  transition: ease-in 0.2s;
+  border-radius: 10px; /*Aqui se redondean sus bordes verdes...*/
+  
+  
+}
+
+.logo a{
+  text-decoration: none;
+  
+}
+.logo span {
+  color: rgb(235, 29, 29);
+  text-decoration: none;
+  }
+
+.logo a h2:hover { /*Tener un span aqui me descuarejinga todo!/*/
+  
+  background-color: rgb(235, 29, 29);
+  color: black;
+  transition: ease-in 0.2s;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight:bolder;
+  
+}
+
+.logo a h2 span:hover{
+  background-color: rgb(235, 29, 29);
+  color: whitesmoke;
+  transition: ease-in 0.2s;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.contenedor
+  {
+    padding-top: 50px; /*para separarlo de la frase de arriba*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.titulo h2{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:underline solid rgb(235, 29, 29)
+}
+
+.titulo h2 span{
+color: rgb(235, 29, 29);
+}
+
+.frase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*AQUI EMPIEZA EL FORMULARIO!*/
+
+legend{
+  color: rgb(235, 29, 29);
+  font-size: larger;
+}
+
+.recuadro{
+  border-radius: 5px;
+  border: solid 1px;
+  padding: 20px;
+  margin-bottom: 150px;
+  
+}
+
+.recuadro:hover{
+  border: solid 5px rgb(235, 29, 29);
+  
+}
+
+.contenedorfoot{
+  display: grid;
+  grid-template-rows: 10px 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  width: 100vw;
+  
 }

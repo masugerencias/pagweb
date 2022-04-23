@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACTO</title>
     <link rel="stylesheet" type="text/css" href="contacto.css" />
-</head>
-<body>
-    
-    <h1>CONTACTO</h1>
-    
-    <nav>
-        <ul>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            <li><a href="biografia.html">BIBLIOGRAFÍA</a></li>
-            <li><a href="home.html">INICIO</a></li>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html"
+            ><h2>Yann <span>Poirot</span></h2></a
+          >
+        </div>
 
+        <ul class="menu">
+          <li><a href="biografia.html">Biografía</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
-    </nav>
-
-    <h2>Contacta con nosotros</h2>
-    <p>Disponemos de un frmulario para tener más detalles antes de ponernos en contacto con usted:</p>
+      </nav>
+    </header>
+   <div class="titulo">
+    <h2>Formulario para contactar a Yann Poirot</h2>
     <br>
+  </div>
+  <div class="frase">
+    <p>
+      Aquí tienes un formulario de contacto para ponerte en comunicación con Yann Poirot:
+    </p>
+    <br />
+  </div>
 
-    <form method="GET">
-        
-    <fieldset>
-        <legend>Datos Personales</legend>
-         <br>
-        <label>Nombre:</label>
-        <input type="text" name="name">
-
-        <br>
-        <br>
-
-        <label>Apellido:</label>
-        <input type="text" name="apellido">
-        <br>
-        <br>
-        <label>Correo electrónico:</label>
-        <input type="email" name="email" placeholder="Escribe tu email" required="true">
-    </fieldset>
     
+     <div class="contenedor">
+      <form method="GET">
+        <div class="formulario">
+          <fieldset class="recuadro"> <!-- esto es el recuadro -->
+            <legend>Datos Personales</legend>
+            <br />
+            <label>Nombre:</label>
+            <input type="text" name="name" placeholder="ej: Juan Gabriel" />
 
+            <br />
+            <br />
+
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" placeholder="ej:García Sanz" />
+            <br />
+            <br />
+            <label>Correo electrónico:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Escribe tu email"
+              required="true"
+            />
+            <br>
+            <br>
+            <label for="country">Pais donde se ubica:</label>
+    <select id="pais" name="pais">
+      <option value="España">España</option>
+      <option value="Francia">Francia</option>
+      <option value="Italia">Italia</option>
+      <option value="Otro">Otro</option>
+    </select>
+          
+       
+
+        <br />
+
+       
+          <legend><br>Motivo de su consulta:</legend>
+          <br />
+          <input type="checkbox" name="tecnico" id="tecnico" value="tecnico" />
+          <label for="tecnico">Servicio técnico</label>
+          <br />
+          <input
+            type="checkbox"
+            name="comercial"
+            id="comercial"
+            value="comercial"
+          />
+          <label for="tecnico">Departamento comercial</label>
+          <br />
+          <input type="checkbox" name="otro" id="otro" value="otro" />
+          <label for="otro">Otros servicios</label>
         
-        <br>
 
-        <fieldset>
-            
-            <legend>Tipo de servicio:</legend>
-            <br>
-            <input type="checkbox" name="tecnico" id="tecnico" value="tecnico">
-            <label for="tecnico">Servicio técnico</label>
-            <br>
-            <input type="checkbox" name="comercial" id="comercial" value="comercial">
-            <label for="tecnico">Departamento comercial</label>
-            <br>
-            <input type="checkbox" name="otro" id="otro" value="otro">
-            <label for="otro">Otros servicios</label>
-
-          </fieldset>
-
-          <br>
-          <br>
-          <br>
+        <br />
+        <br />
+        <br />
         <label for="comentario">Más detalles de su consulta:</label>
-        <br>
-        <textarea id="comentario" name="comentario" rows="4" cols="50"> </textarea>
+        <br />
+        <textarea id="comentario" name="comentario" rows="4" cols="50">
+        </textarea>
 
-        <br>
+        <br />
+
+        <input type="submit" value="Enviar" />
+      </fieldset>
+      </div>
+      </form>
+    </div>
+  </body>
 
 
-
-
-
-        <input type="submit" value="Enviar">
-    </form>
-    
-</body>
+  <footer>
+    <div class="contenedorfoot">
+    <div class="uno">
+      <p>ESTO ES EL FOOTER 1</p>
+    </div>
+    <div class="dos">
+      <p>ESTO ES EL FOOTER 2</p>
+    </div>
+    <div class="tres">
+      <p>ESTO ES EL FOOTER 3</p>
+    </div>
+    <div class="cuatro">
+      <p>ESTO ES EL FOOTER 4</p>
+    </div>
+  </div>
+  </footer>
 </html>
-

@@ -2,15 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: brown;
+  background-color: black;
   color: whitesmoke;
+  font-family: 'Roboto Mono', monospace;
    
 }
 
-body{
-  font-family: 'Indie Flower', cursive;
-  font-size: 30px;
-}
 
 .menu a {
   color: whitesmoke;
@@ -36,10 +33,35 @@ body{
   border-radius: 10px; /*Aqui se redondean sus bordes verdes...*/
 }
 
+.logo a{
+  text-decoration: none;
+  
+}
 .logo span {
   color: yellow;
+  text-decoration: none;
+  }
+
+.logo a h2:hover { /*Tener un span aqui me descuarejinga todo!/*/
+  
+  background-color: yellow;
+  color: black;
+  transition: ease-in 0.2s;
+  border-radius: 10px;
+  text-decoration: none;
+  
+  
 }
 
+.logo a h2 span:hover{
+  background-color: yellow;
+  color: black;
+  transition: ease-in 0.2s;
+  border-radius: 10px;
+  text-decoration: none;
+  
+ 
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -58,7 +80,7 @@ body{
 .granprimera{ /* EL GRID hay que ponerlo en el contenedor más grande (donde irán nuestras cajas)*/
   margin: 0 auto;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: grid;
     grid-template-columns: repeat(2,1fr);
   align-items: center;
@@ -89,7 +111,8 @@ body{
 }
 
 .granprimera img:hover{
-  border:solid yellow 20px;
+  border:solid yellow 15px;
+  transition: ease-in 0.2s;
     
 }
 
@@ -119,6 +142,7 @@ body{
   border: solid 10px;
   border-color: whitesmoke;
   border-radius: 10px;
+  
 }
 
 .peqsegunda p{
@@ -127,13 +151,16 @@ body{
 }
 
 .gransegunda img:hover{
-    border:solid yellow 20px;
+    
+  border:solid yellow 15px;
+  transition: ease-in 0.2s;
+    
     
   }
 
 /*AQUI EMPIEZA LA TERCERA PARTE creo que tengo que copiarlo y pegarlo todo y cambiar los nombres de las clases segun el html hecho*/
 
-.grande span{  /*esto podria ir en el body*/
+.grande span{  /*esto podria ir enl el body*/
   color:yellow
 }
 
@@ -166,10 +193,11 @@ border-radius: 10px;
 
 .grantercera img:hover{
 
-border:solid yellow 20px;
+  border:solid yellow 15px;
+  transition: ease-in 0.2s;
+    
   
 }
-
 
 .grantercera {
 display: grid;

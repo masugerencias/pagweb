@@ -2,106 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*para que elementos continentes de paddings... no se muevan con hover...*/
-
+    background-color: black;
+    
 }
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-.grande{
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
+header h1{
+    font-size: 100px;
     color: whitesmoke;
 }
-
-.menu a{
-    color: whitesmoke;
-    text-decoration: none;
-    padding: 10px 20px; /*aqui no se agranda, en el hover SI!*/
-}
-
-.menu{
-    display: flex;
-    width: 50%; /*importante espacio entre palabras*/
-    justify-content: space-around;
-    
-    
-}
-
-.menu li{
-    list-style: none;
-    cursor: pointer;
-    
-}
-
-.menu a:hover{
-    background-color: aqua;
-    color: black;
-    transition:ease-in 0.2s;
-    border-radius: 10px; /*Aqui se redondean sus bordes verdes...*/
-    
-}
-
-.logo span{
+header span{
     color: aqua;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between ;
-    padding: 30px;
-    
-    
-}
 
-.contenido1{
-    margin: 0 auto;
-    width: 80vw;
-    height: 80vh;
+.contenedor {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
+    grid-auto-rows: 200px;
+    grid-gap: 50px;
+    margin-top: 50px;
+ }
+
+ .contenido2{
+    
+    background-color: black;
+    color: whitesmoke;
+    margin-left: 50px; 
+    
 }
 
 .contenido2 h1 span{
     color: aqua;
 }
 
-.descargacv{
-    padding: 10px 20px;
+.contenido2 a{
+    padding: 20px 30px;
     margin: 30px;
     border:none;
     border-radius: 10px;
     cursor: pointer;
     background-color: whitesmoke;
-}
-
-.contenido2{
-    padding-right: 50px;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
 }
 
 .contenido2 p{
     text-align: justify;
+    
+       
+}
+.contenido2 boton a{ /* no encuentro la manera de centrar el boton...*/
+    justify-content: center;
+    color: aqua;
+    
 }
 
-.descargacv:hover{
-background-color: aqua
+.contenido2 a:hover{
+background-color: aqua;
 
+
+
+}
+
+.boton{
+    
 }
 
 .contenido1 img{/*creo que conviene siempre usar max-w y max-h a 300px?*/
-    max-width: 300px;
-    max-height: 300px;
-    border: solid 2px;
-    border-color: whitesmoke
+    max-width: 400px;
+    max-height: 400px;
+    border: solid 10px;
+    border-color: whitesmoke;
+    border-radius:10px;
     
 }
 
 .contenido1 img:hover{
-    border: solid 4px;
+    border: solid 15px;
     border-color: aqua;
+    border-radius:10px;
+    transition: ease-in 0.2s;
+    
     
 }
