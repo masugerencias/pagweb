@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+     
+  }
+
+  
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 20px; /*aqui no se agranda, en el hover SI!*/
+  }
+  
+  .menu {
+    display: flex;
+    width: 50%; /*importante espacio entre palabras*/
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .menu a:hover {
+    background-color:rgb(90, 227, 63);
+    color: black;
+    transition: ease-in 0.2s;
+    border-radius: 10px; /*Aqui se redondean sus bordes verdes...*/
+    
+    
+  }
+  
+  .logo a{
+    text-decoration: none;
+    
+  }
+  .logo span {
+    color: rgb(90, 227, 63);
+    text-decoration: none;
+    }
+  
+  .logo a h2:hover { /*Tener un span aqui me descuarejinga todo!/*/
+    
+    background-color: rgb(90, 227, 63);
+    color: black;
+    transition: ease-in 0.2s;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight:bolder;
+    
+  }
+  
+  .logo a h2 span:hover{
+    background-color: rgb(90, 227, 63);
+    color: black;
+    transition: ease-in 0.2s;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+   h1{
+    font-size: 100px;
+    color: rgb(90, 227, 63);
+}
+
+
+
+.contenedor img{
+  
+  transition: ease-in 0.2s;
+  border: solid 10px;
+  border-color: whitesmoke;
+  border-radius: 10px;
+    
+}
+
+.contenedor img:hover{
+  border:solid rgb(90, 227, 63) 15px;
+}
+
+  .contenedor{
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      width: 100vw;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+         
+     
+    }
+
+    .contenedor img{
+      max-height: 500px;
+      max-width: 200px;
+    }
+
+    .subtituloporfolio{
+      text-align: center;
+    }
+
+    .video{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: block;
+      text-align: center;
+    
+     
+     
+    }
+  
+
+ 
+

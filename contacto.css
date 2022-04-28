@@ -121,5 +121,15 @@ legend{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
   width: 100vw;
+  text-align: center;
   
+  border-top: solid rgb(235, 29, 29);
+  padding-top: 10px;
+
+ 
+}
+
+.contenedorfoot a,p {
+  color: grey;
+  font-size: smaller;
 }
